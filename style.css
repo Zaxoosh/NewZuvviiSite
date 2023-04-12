@@ -12,22 +12,23 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; /* Add this line for vertical alignment */
-    text-align: center; /* Add this line for text alignment */
+    flex-direction: column;
+    text-align: center;
+    position: relative; /* Remove absolute positioning */
 }
 
 .header h1 {
-    font-size: 24px; /* Update this value for the desired font size */
-    color: #000; /* Update this value for the desired font color */
+    font-size: 24px;
+    color: #000000;
     z-index: 1;
+    font-family: 'Helvetica', sans-serif;
 }
 
 .header img {
-    max-height: 750%; /* Update this value to make the image larger */
-    max-width: 750%; /* Update this value to make the image larger */
-    z-index: -1;
+    max-height: 750%;
+    max-width: 750%;
+    z-index: 1;
 }
-
 
 .nav {
     display: flex;
@@ -49,10 +50,51 @@ body {
 }
 
 .content {
+    font-family: Arial, sans-serif;
+    width: 80%;
+    margin: 0 auto;
     padding: 20px;
-    text-align: center;
-    background-color: #2DB1B4;
+    background-color: #e1f3e1;
+    border-radius: 10px;
+}
+
+h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #000;
+    font-size: 18px;
+    line-height: 1.6;
+    font-style: italic;
+}
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+.btn-container {
+    margin-top: 20px;
+}
+
+.btn-container a {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 10px 20px;
+    background-color: #00703c;
     color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn-container a:hover {
+    background-color: #005728;
 }
 
 .footer {
